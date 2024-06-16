@@ -13,6 +13,19 @@
             box-sizing: border-box;
             background-color: #1d0e0e;
         }
+
+        .image-container {
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
         .header {
             background-color: #030303;
             color:#555;
@@ -97,7 +110,10 @@
 
 <div class="container">
     <div class="card">
+        <div class="image-container">
         <img src="img/Dusk1.png" alt="Dusk" style="width: 100%;">
+        </div>
+        
         <h1>Adara Duskrunner</h1>
         <p class="title">Nightingale Lead</p>
         <p class="title">Shrouded Syndicate</p>
