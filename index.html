@@ -12,6 +12,13 @@
             padding: 0;
             box-sizing: border-box;
             background-color: #1d0e0e;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
         }
 
         .image-container {
@@ -28,21 +35,13 @@
 
         .header {
             background-color: #030303;
-            color:#555;
+            color: #555;
             padding: 50px;
             text-align: center;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
 
-        .footer {
-            background-color: #030303;
-            color:#555;
-            padding: 50px;
-            text-align: center;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -98,90 +97,60 @@
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-     
+
+        .footer {
+            background-color: #030303;
+            color: #555;
+            padding: 50px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
     </style>
 </head>
 <body>
-
-    <div class="header">
-        <h1>Character Profiles</h1>
-        <p></p>
-    </div>  
-   
-
-<div class="container">
-    <div class="card">
-        <div class="image-container">
-        <img src="img/Dusk1.png" alt="Dusk" style="width: 100%;">
-        </div>
-
-        <h1>Adara Duskrunner</h1>
-        <p class="title">Nightingale Lead</p>
-        <p class="title">Shrouded Syndicate</p>
-        <p><a href="#">Profile</a></p>
-    </div>
-    
-    <!-- Add more profile cards as needed -->
-    <div class="card">
-        <div class="image-container">
-        <img src="img/Nahvari.png" alt="Nahvari" style="width:100%;">
-        </div>
-        <h1>Nahvari Shadestalker</h1>
-        <p class="title">Mephaedis Noble</p>
-        <p class="title">Invictus Imperium </p>
-        <p><a href="#">Profile</a></p>
-    </div>
-
-    <div class="card">
-        <div class="image-container">
-        <img src="img/kishki.png" alt="Kishki" style="width:100%;">
-        </div>
-        <h1>Kishki Mephaedis</h1>
-        <p class="title">Nightingale</p>
-        <p class="title">Invictus Imperium </p>
-        <p><a href="#">Profile</a></p>
-    </div>
-
-    <div class="container">
-        <div class="card">
-            <div class="image-container">
-            <img src="img/Dusk1.png" alt="Dusk" style="width: 100%;">
-            </div>
-    
-            <h1>Adara Duskrunner</h1>
-            <p class="title">Nightingale Lead</p>
-            <p class="title">Shrouded Syndicate</p>
-            <p><a href="#">Profile</a></p>
-        </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Character Profiles</h1>
+            <p></p>
+        </div>  
         
-        <!-- Add more profile cards as needed -->
-        <div class="card">
-            <div class="image-container">
-            <img src="img/Nahvari.png" alt="Nahvari" style="width:100%;">
+        <div class="container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/Dusk1.png" alt="Dusk" style="width: 100%;">
+                </div>
+                <h1>Adara Duskrunner</h1>
+                <p class="title">Nightingale Lead</p>
+                <p class="title">Shrouded Syndicate</p>
+                <p><a href="#">Profile</a></p>
             </div>
-            <h1>Nahvari Shadestalker</h1>
-            <p class="title">Mephaedis Noble</p>
-            <p class="title">Invictus Imperium </p>
-            <p><a href="#">Profile</a></p>
-        </div>
-    
-        <div class="card">
-            <div class="image-container">
-            <img src="img/kishki.png" alt="Kishki" style="width:100%;">
+            
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/Nahvari.png" alt="Nahvari" style="width: 100%;">
+                </div>
+                <h1>Nahvari Shadestalker</h1>
+                <p class="title">Mephaedis Noble</p>
+                <p class="title">Invictus Imperium </p>
+                <p><a href="#">Profile</a></p>
             </div>
-            <h1>Kishki Mephaedis</h1>
-            <p class="title">Nightingale</p>
-            <p class="title">Invictus Imperium </p>
-            <p><a href="#">Profile</a></p>
+
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/kishki.png" alt="Kishki" style="width: 100%;">
+                </div>
+                <h1>Kishki Mephaedis</h1>
+                <p class="title">Nightingale</p>
+                <p class="title">Invictus Imperium </p>
+                <p><a href="#">Profile</a></p>
+            </div>
         </div>
-    
+    </div>
 
-</div>
-
-<div class="footer">
-    <p>&copy; 2024 JadedAmber. All rights reserved.</p>
-    <p>Powered by the sacrifices of a thousand bunnies</p>
-</div>
-
+    <div class="footer">
+        <p>&copy; 2024 JadedAmber. All rights reserved.</p>
+        <p>Powered by the sacrifices of a thousand bunnies</p>
+    </div>
 </body>
 </html>
